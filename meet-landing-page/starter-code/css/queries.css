@@ -1,0 +1,80 @@
+@media (max-width: 48em) {
+  main,
+  footer {
+    max-width: 100%;
+  }
+  .grid {
+    column-gap: 0;
+  }
+  .grid--3-cols {
+    grid-template-columns: auto;
+  }
+
+  .hero-brand {
+    grid-column: 1 / span 3;
+    justify-self: center;
+  }
+
+  .hero-text-box {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    width: 41em;
+    gap: 2em;
+    justify-self: center;
+  }
+
+  .hero-image-right {
+    right: 0;
+  }
+
+  .section-gallery {
+    gap: 1.5em;
+    padding: 7em 5em;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 4em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 24em) {
+  .hero-image-left {
+    grid-column: 1/ 1;
+    left: -1.5em;
+    width: 135%;
+  }
+  .hero-image-right {
+    grid-column: 3 / 3;
+    width: 135%;
+    right: 3.5em;
+  }
+
+  .hero-text-box {
+    width: 100%;
+    padding: 5em;
+  }
+  .section-gallery {
+    flex-wrap: wrap;
+    padding: 5em 1em;
+  }
+  .gallery-image {
+    width: 45%;
+  }
+
+  .feature-primary-header {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .hero-heading-primary {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
